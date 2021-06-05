@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Pletelet Donation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pletelet-style.css" type="text/css">
+  </head>
+  <body>
+    <h1>Pletelet Donation Form</h1>
+    
+         <div class="container">
+          <form action="add_info.php" method="post">  
+         <div class="question">
+             <label for="name">Name:</label>
+              <input type="text" id="username" placeholder="username" /><br>
+        </div>
+              
+            <div class="question">
+              <label for="contact_number">Contact number:</label>
+              <input type="number" name="contact_number" placeholder="Your number" required><br>
+            </div>
+            
+             <label for="current_place">Where do you currently live in? *(district name)<br>
+                <input type="text" name="current_place" placeholder="Your Place" required><br><br>
+                 
+                 
+            <div class="question">
+              <label for="name">Blood Group*</label>
+              <input type="text" id="name" name="name" placeholder="blood group" /required>
+            </div> 
+              
+             <div class="question">
+              <label for="age_granted">Is your age over 17 and below 50? *<br>
+              <input type="radio" name="age_granted" value="Yes" required> Yes<br>
+              <input type="radio" name="age_granted" value="No"> No<br></label>
+            </div>  
+                
+            <div class="question">
+              <label for="weight_granted">Is your weight above 50? *(.in kg) *<br>
+              <input type="radio" name="weight_granted" value="Yes" required> Yes<br>
+              <input type="radio" name="weight_granted" value="No"> No<br></label>
+            </div>
+           
+        <div class="question">
+          <label for="contact_number">Did you before donate pletelet*</label>
+            <input type="radio" name="platelet_donated" value="Yes" required> Yes <input type="radio" name="platelet_donated" value="No"> No
+        </div>
+                  
+        <div class="question">
+          <label for="contact_number">Have you recently donate pletelets(duration in days/months)*</label>
+        <input type="text" id="name" name="duration" placeholder="duration" /required>
+              <div><br>
+            
+                 
+           <input type="submit" name="submit" >
+             </form>
+</body>
+</html>
