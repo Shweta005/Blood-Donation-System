@@ -98,7 +98,9 @@
     transition: margin-left 300ms;
     margin-left: 345px;
 }
-
+.reverse{
+    color: #fff;
+}
 header {
     background: #fff;
     display: flex;
