@@ -8,15 +8,15 @@
     <h1>Pletelet Donation Form</h1>
     
          <div class="container">
-          <form action="add_info.php" method="post">  
+          <form action="#" method="post">  
          <div class="question">
              <label for="name">Name:</label>
-              <input type="text" id="username" placeholder="username" /><br>
+              <input type="text" id="username" placeholder="Enter Your name" /><br>
         </div>
               
             <div class="question">
               <label for="contact_number">Contact number:</label>
-              <input type="number" name="contact_number" placeholder="Your number" required><br>
+              <input type="number" name="contact_number" placeholder="Enter Your number" required><br>
             </div>
             
              <label for="current_place">Where do you currently live in? *(district name)<br>
@@ -49,7 +49,14 @@
           <label for="contact_number">Have you recently donate pletelets(duration in days/months)*</label>
         <input type="text" id="name" name="duration" placeholder="duration" /required>
               <div><br>
-            
+          
+        <div class="question">
+              <label for="agree">
+                <input type="checkbox" name="agree" value="Agree" required>
+                I agree that, all the information I have provided are true
+                and they won't be misused.
+              </label>
+            </div>
                  
            <input type="submit" name="submit" >
              </form>
