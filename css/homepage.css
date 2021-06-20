@@ -62,7 +62,8 @@ html,body{
 }
 
 .landingText h3{
-    margin: 6px !important;
+    /* margin: 6px !important; */
+    margin: 88px !important;
     font-size: 20px;
     opacity: 0.3;
     line-height: 30px;
@@ -70,7 +71,8 @@ html,body{
 
 .landingText .btn{
     width: 120px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 35px;
     padding: 14px 20px 14px 20px;
     background-color: #2f8be0;
     border-radius: 45px;
@@ -483,7 +485,8 @@ body {
   h3 {
     position: absolute;
     top: 0px;
-    left: 0px;
+    /* left: 0px; */
+    left:-73px;
   }
   
   #blood_selector {
