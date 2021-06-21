@@ -1,96 +1,126 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title>Blood Donation</title>
+<head>
+    <title>basic Donation form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
+    
   <body>
-    <h1>Blood Donation Form</h1>
-    <h3>"DONATE BLOOD,SAVE LIFE!"<br>
-        Donating blood is a very precious work for a human being</h3>
-    <div class="container">
-          <form action="#" method="post">
-            <div class="question">
-              <label for="name"> Name:*</label>
-              <input type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
-              
-            <div class="question">
-              <label for="email">Email Id:*</label>
-              <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-              
-               <div class="question">
-              <label for="contact_number">Contact number:*</label>
-              <input type="number" name="contact_number" placeholder="Your number" required>
-            </div>
-              
-            
-            <div class="question">
-              <label for="current_place">Where do you currently live in? *(current address)<br>
-                  <input type="text" name="current_place" placeholder="Your Place" required></label>
-            </div>
-              
-            <div class="question">
-              <label for="gender" class="radio">Gender *<br>
-              <input type="radio" name="gender" value="Male" required>Male<br>
-              <input type="radio" name="gender" value="Female">Female<br>
-              <input type="radio" name="gender" value="None">Prefer not to say<br></label>
-            </div>
-                
-            <div class="question">
-              <label for="name">Blood Group*</label>
-              <input type="text" id="name" name="name" placeholder="blood group" /required>
-            </div> 
-              
-            <div class="question">
-              <label for="age_granted">Is your age over 17 and below 50? *<br>
-              <input type="radio" name="age_granted" value="Yes" required> Yes<br>
-              <input type="radio" name="age_granted" value="No"> No<br></label>
-            </div>  
-                
-            <div class="question">
-              <label for="weight_granted">Is your weight above 50? *(.in kg) *<br>
-              <input type="radio" name="weight_granted" value="Yes" required> Yes<br>
-              <input type="radio" name="weight_granted" value="No"> No<br></label>
-            </div>
-              
-            <div class="question">
-              <label for="height_granted">Is your height above 5 feet ? *(.approx in kg) *<br>
-              <input type="radio" name="height_granted" value="Yes" required> Yes<br>
-              <input type="radio" name="height_granted" value="No"> No<br></label>
-            </div>
-              
-            <label for= history> In the last 6 months have you had any history of the following:<br>
-            
-              
-            <div class="question">
-              <label for="previous_donator">Did you recently donate blood in duration of two months? *
+   <form class="container" action="#" method="post">
+              <h1>Blood Donation Form</h1>
+              <h5>"DONATE BLOOD,SAVE LIFE!"<br>
+        Donating blood is a very precious work for a human being</h5>
+          
+          <div class="form-body">
+              <div class="horizontal-group">
+            <div class="form-group left">
+            <label for="name" class="label-title">Name *</label>
+            <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+        </div>
                   
-                <input type="radio" name="previous_donator" value="Yes" required>Yes<br>
-                <input type="radio" name="previous_donator" value="No">No<br>
-              </label>
-            </div>
-              
-            <div class="question">
-              <label for="regular_medicine">Do you take any kind of regular medicine? *<br>
-                <input type="radio" name="regular_medicine" value="Yes" required>Yes<br>
-                <input type="radio" name="regular_medicine" value="No">No<br>
-              </label>
-            </div>
+        <div class="form-group right">
+            <label for="" class="label-title">Address *</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+        </div>
+            
+        <div class="form-group left">
+            <label for="name" class="label-title">contact number *</label>
+            <input type="text" id="mobile" class="form-input" placeholder="enter your contact number" required="required" />
+        </div>
+                  
+        <div class="form-group right">
+            <label for="" class="label-title">city *</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your city name" />
+        </div>              
+         
+         <div class="form-group left">
+            <label for="" class="label-title">Birth Date</label>
+            <input type="date" id="date" class="form-input" placeholder="" />
+         </div>  
+                  
+        <div class="form-group right">
+            <label for="" class="label-title">Age*</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your city name" />
+        </div>     
+                  
+            <div class="form-group left">
+            <label for="name" class="label-title">Height (in inch)*</label>
+            <input type="text" id="mobile" class="form-input" placeholder="enter your contact number" required="required" />
+        </div>
+                  
+        <div class="form-group right">
+            <label for="" class="label-title">weight(in kg)*</label>
+            <input type="text" id="lastname" class="form-input" placeholder="enter your city name" />
+        </div>      
+                  
+            <div class="form-group left">
+          <label for="" class="label-title">Gender*</label><br>
+            <select class="type" id="bool" name="type">
+              <option value="" disabled selected>select</option>
+              <option value="1"> Male</option>
+              <option value="2"> Female</option>
+              <option value="3"> Prefer Not to Say</option>
+            </select>
+        </div>      
+             
+              <div class="form-group right">
+           <label for="" class="label-title">Blood Bank Name *</label><br>
+        <select class="centerName" id="centers" name="Center">
+              <option value="" disabled selected>select</option>
+              <option value="1"> option1</option>
+              <option value="2"> option2</option>
+              <option value="3"> option3</option>
+              <option value="4"> option4</option>
+            </select>    
+            </div>         
                  
-            <div class="question">
-              <label for="agree">
-                <input type="checkbox" name="agree" value="Agree" required>
-                I agree that, all the information I have provided are true
-                and they won't be misused.
-              </label>
-            </div>
+            <div class="form-group left">
+            <label for="" class="label-title">Blood Group</label>
+            <select class="blood-type" id="type" name="Blood type">
+              <option value="" disabled selected>select</option>
+              <option value="1"> A+ve</option>
+              <option value="1"> A-ve</option>
+              <option value="1"> B+ve</option>
+              <option value="1"> B-ve</option>
+              <option value="1"> AB+ve</option>
+              <option value="1"> AB-ve</option>
+              <option value="1"> O+ve</option>
+              <option value="1"> O-ve</option>
+              </select>
+                  </div>
+                  
+           
+        <div class="form-group right">
+          <label for="" class="label-title">Have you donated blood before?*</label><br>
+            <select class="type" id="bool" name="type">
+              <option value="" disabled selected>select</option>
+              <option value="1"> Yes</option>
+              <option value="2"> No</option>
+            </select>
+        </div>
                 
-            <input type="submit" name="submit" >
-                </label>
-        </form>
-      </div>
+         <div class="form-group left">
+            <label for="name" class="label-title">Have you recently donate blood(duration in days/months)*</label>
+            <input type="text" id="firstname" class="form-input" placeholder="Enter approx Duration" required="required" />
+        </div>
+         
+          <div class="form-group right">
+          <label for="" class="label-title">Do you take any kind of regular medicine? *</label><br>
+            <select class="type" id="bool" name="type">
+              <option value="" disabled selected>select</option>
+              <option value="1"> Yes</option>
+              <option value="2"> No</option>
+            </select>
+        </div>
+                  
+        <div class="form-footer">
+        <label for="agree">
+         <input type="checkbox" name="agree" value="Agree" required> I agree that, all the information I have provided are true and they won't be misused. </label>
+                        
+         <input type="submit" name="submit" >
+            </div>   
+         </div>
+       </div>
+      </form>
     </body>
 </html>
