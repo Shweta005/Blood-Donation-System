@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <div class="nav">
+            <div class="logo">
+              <h4> <a href="Admin.html"><img src="./lifetracker.png" width="210px" height="80px" alt=""/></a> </h4> 
+            </div>
+            <div class="links">
+                <a href="DonorOption.html" class="mainlink">Donor</a>
+                <a href="RequestBlood.html">Request</a>
+                <a href="#">Stock</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <form class="container" action="#" method="post">
+           <center> <h2>Blood Donation Form</h2></center>
+            <h5>"DONATE BLOOD,SAVE LIFE!"<br>
+      Donating blood is a very precious work for a human being</h5>
+        
+        <div class="form-body">
+            <div class="horizontal-group">
+          <div class="form-group left">
+          <label for="name" class="label-title">Name *</label>
+          <input type="text" id="firstname" class="form-input" placeholder="enter your first name" required="required" />
+      </div>
+                
+      <div class="form-group right">
+          <label for="" class="label-title">Address *</label>
+          <input type="text" id="lastname" class="form-input" placeholder="enter your last name" />
+      </div>
+          
+      <div class="form-group left">
+          <label for="name" class="label-title">contact number *</label>
+          <input type="text" id="mobile" class="form-input" placeholder="enter your contact number" required="required" />
+      </div>
+                
+      <div class="form-group right">
+          <label for="" class="label-title">city *</label>
+          <input type="text" id="lastname" class="form-input" placeholder="enter your city name" />
+      </div>              
+       
+       <div class="form-group left">
+          <label for="" class="label-title">Birth Date</label>
+          <input type="date" id="date" class="form-input" placeholder="" />
+       </div>  
+                
+      <div class="form-group right">
+          <label for="" class="label-title">Age*</label>
+          <input type="text" id="lastname" class="form-input" placeholder="enter your city name" />
+      </div>     
+                
+          <div class="form-group left">
+          <label for="name" class="label-title">Height (in inch)*</label>
+          <input type="text" id="mobile" class="form-input" placeholder="enter your contact number" required="required" />
+      </div>
+                
+      <div class="form-group right">
+          <label for="" class="label-title">weight(in kg)*</label>
+          <input type="text" id="lastname" class="form-input" placeholder="enter your city name" />
+      </div>      
+                
+          <div class="form-group left">
+        <label for="" class="label-title">Gender*</label><br>
+          <select class="type" id="bool" name="type">
+            <option value="" disabled selected>select</option>
+            <option value="1"> Male</option>
+            <option value="2"> Female</option>
+            <option value="3"> Prefer Not to Say</option>
+          </select>
+      </div>      
+           
+            <div class="form-group right">
+         <label for="" class="label-title">Blood Bank Name *</label><br>
+      <select class="centerName" id="centers" name="Center">
+            <option value="" disabled selected>select</option>
+            <option value="1"> option1</option>
+            <option value="2"> option2</option>
+            <option value="3"> option3</option>
+            <option value="4"> option4</option>
+          </select>    
+          </div>         
+               
+          <div class="form-group left">
+          <label for="" class="label-title">Blood Group</label>
+          <select class="blood-type" id="type" name="Blood type">
+            <option value="" disabled selected>select</option>
+            <option value="1"> A+ve</option>
+            <option value="1"> A-ve</option>
+            <option value="1"> B+ve</option>
+            <option value="1"> B-ve</option>
+            <option value="1"> AB+ve</option>
+            <option value="1"> AB-ve</option>
+            <option value="1"> O+ve</option>
+            <option value="1"> O-ve</option>
+            </select>
+                </div>
+                
+         
+      <div class="form-group right">
+        <label for="" class="label-title">Have you donated blood before?*</label><br>
+          <select class="type" id="bool" name="type">
+            <option value="" disabled selected>select</option>
+            <option value="1"> Yes</option>
+            <option value="2"> No</option>
+          </select>
+      </div>
+              
+       <div class="form-group left">
+          <label for="name" class="label-title">Have you recently donate blood(duration in days/months)*</label>
+          <input type="text" id="firstname" class="form-input" placeholder="Enter approx Duration" required="required" />
+      </div>
+       
+        <div class="form-group right">
+        <label for="" class="label-title">Do you take any kind of regular medicine? *</label><br>
+          <select class="type" id="bool" name="type">
+            <option value="" disabled selected>select</option>
+            <option value="1"> Yes</option>
+            <option value="2"> No</option>
+          </select>
+      </div>
+                
+      <div class="form-footer">
+      <label for="agree">
+       <input type="checkbox" name="agree" value="Agree" required> I agree that, all the information I have provided are true and they won't be misused. </label>
+                      
+       <input type="submit" name="submit" >
+          </div>   
+       </div>
+     </div>
+    </form>
+ 
+
+    </body>
+    </html>
