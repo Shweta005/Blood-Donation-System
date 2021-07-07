@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Donor</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table1.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="las la-heartbeat"></span> <span><a href="index.html" class="reverse">LifeTracker</a></span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="Admin.html" ><span class="las la-tachometer-alt"></span>
+                    <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="RegisterCenter.html"><span class="las la-hospital"></span>
+                    <span>Blood Banks</span></a>
+                </li>
+                <li>
+                    <a href="Donor.html"class="active" ><span class="las la-hands-helping"></span>
+                    <span>Donor</span></a>
+                </li>
+                <li>
+                    <a href="BookSlot.html"><span class="las la-calendar-check"></span>
+                    <span>Book Slot</span></a>
+                </li>
+                <li>
+                    <a href="RequestLog.html"><span class="las la-tint"></span>
+                    <span>Blood Request</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-heart"></span>
+                    <span>Request History</span></a>
+                </li>
+                <li>
+                    <a href="Stock.html" ><span class="las la-prescription-bottle-alt"></span>
+                    <span>Blood Stock</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> Dashboard
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search Here" />
+            </div>
+            <div class="user-wrapper">
+                <img src="img/Avatar.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrator</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="cards">
+
+                <div class="card-single">
+                    <div>
+                        <h1>5</h1>
+                        <span>Donors</span>
+                    </div>
+                    <div>
+                        <span class="las la-handshake"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>12</h1>
+                        <span>Patients</span>
+                    </div>
+                    <div>
+                        <span class="las la-user-injured"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>25</h1>
+                        <span>Blood Request</span>
+                    </div>
+                    <div>
+                        <span class="las la-file-medical"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>2</h1>
+                        <span>Donations</span>
+                    </div>
+                    <div>
+                        <span class="las la-prescription-bottle"></span>
+                    </div>
+                </div>
+            </div>
+            <table>
+                <caption><h2>Donor Log</h2></caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">Leonard Hofstadter</td>
+                    <td>07/06/2016</td>
+                    <td>Pending</td>
+                    <td>lhofstadter@caltech.edu</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Sheldon Cooper</td>
+                    <td>07/01/2016</td>
+                    <td>Active</td>
+                    <td>scooper@@caltech.edu</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Howard Wolowitz</td>
+                    <td>06/05/2016</td>
+                    <td>Inactive</td>
+                    <td>hwolowitz@caltech.edu</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Raj Koothrappali</td>
+                    <td>06/20/2016</td>
+                    <td>Active</td>
+                    <td>rkoothrappali@caltech.edu</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Penny</td>
+                    <td>07/06/2016</td>
+                    <td>Active</td>
+                    <td>penny@cheesecakefactory.com</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Bernadette Rostenkowski</td>
+                    <td>07/05/2016</td>
+                    <td>Pending</td>
+                    <td>brostenkowski@caltech.edu</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">Amy Farrah Fowler</td>
+                    <td>07/05/2016</td>
+                    <td>Pending</td>
+                    <td>afowler@caltech.edu</td>
+                  </tr>
+                </tbody>
+              </table>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
